@@ -1,0 +1,51 @@
+.hero-image{
+    background-image: url("../../Assets/hero-image.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hero-image h1{
+    font-family: calibri;
+    font-size: 5em;
+    color: #fff;
+    position: relative;
+    text-shadow: 5px 2px rgb(0, 0, 0);
+    
+}
+
+#arrow{
+    position: absolute;
+    /* top: 90vh; */
+    animation: arrow-animation 1.5s infinite ease-out;
+    cursor: pointer;
+
+
+  }
+
+#arrow:hover{
+    filter: brightness(50%)
+}
+  
+  @keyframes arrow-animation{
+    0%{
+        top: 80vh;
+    }
+  
+    50%{
+        top: 83vh;
+    }
+  
+    100%{
+        top: 80vh;
+    }
+  
+  }
+

@@ -1,0 +1,30 @@
+#section{
+    height: 100vh;
+}
+
+#profile-text{
+    font-size: 1.5rem !important;
+    color: black;
+    /* transform-style: preserve-3d; */
+    /* transition: 1s;
+    transform: rotateX(0deg); */
+
+}
+
+.profile-pic{
+    border-radius: 100%;
+    width: 70%;
+    margin-top: 3rem;
+}
+
+.social-icons{
+    font-size: 5rem;
+}
+
+.social-icons a i {
+    color: black !important
+
+}
+
+
+
