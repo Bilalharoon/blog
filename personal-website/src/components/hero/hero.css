@@ -13,10 +13,10 @@
 }
 
 .hero-image h1{
-    font-family: calibri;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
     font-size: 5em;
     color: #fff;
-    position: relative;
+    /* position: relative; */
     text-shadow: 5px 2px rgb(0, 0, 0);
     
 }

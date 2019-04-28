@@ -34,15 +34,6 @@ class BlogContainer extends Component {
 
     }
 
-    clickHandlerNext = () => {
-        this.props.history.push(`/blog-posts/${parseInt(this.props.match.params.id) + 1}`)
-
-        console.log(this.props)
-    }
-
-    clickHandlerBack = () => {
-        this.props.history.push(`/blog-posts/${parseInt(this.props.match.params.id) - 1}`)
-    }
     render() {
 
         // show the back button if we're not on the first page

@@ -3,7 +3,7 @@ import './navbar.css'
 
 const navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-secondary sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
             <button className="navbar-toggler ml-auto btn btn-secondary" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
