@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import "./login.css";
+
 class Login extends Component {
   state = {};
+
+  submitHandler = e => {
+    e.preventDefault();
+    console.log("hello world");
+  };
+
   render() {
     return (
       <div className="Login d-flex justify-content-center align-items-center">
-        <div className="login-box d-flex flex-column justify-content-center align-items-center">
+        <form
+          className="login-box d-flex flex-column justify-content-center align-items-center"
+          onSubmit={this.submitHandler}
+        >
           <h1>LOGIN</h1>
           <input
             type="email"
@@ -19,7 +29,13 @@ class Login extends Component {
             placeholder="Password"
             className="input-field"
           />
-        </div>
+
+          <input
+            type="submit"
+            value="SUBMIT"
+            className="mt-5 btn btn-success submit-button"
+          />
+        </form>
       </div>
     );
   }

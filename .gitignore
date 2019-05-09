@@ -4,3 +4,5 @@ personal-website/\.firebase/
 personal-website/\.firebaserc
 
 personal-website/firebase\.json
+
+\.vscode/

@@ -8,6 +8,13 @@
   background-color: #6c7a89;
   box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
 }
+
+/* large desktops */
+@media only screen and (min-width: 1200px) {
+  .login-box {
+    width: 50%;
+  }
+}
 .login-box h1 {
   color: white;
   text-transform: uppercase;
@@ -29,4 +36,8 @@
 .input-field:focus {
   outline-width: 0px;
   font-size: 1rem;
+}
+
+.submit-button {
+  width: 10rem;
 }
