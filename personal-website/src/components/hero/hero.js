@@ -13,7 +13,10 @@ const Hero = (props) => {
 }
 
 const clickHandler = () => {
-    document.querySelector(".scroll-here").scrollIntoView({ behavior: "smooth" })
+    const element = document.querySelector(".scroll")
+    element.scrollIntoView({ behavior: "smooth" })
+    
+
 }
 
 export default Hero

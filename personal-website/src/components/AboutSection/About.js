@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const About = () => {
     return (
-        <div className="container d-flex justify-content-center flex-column mt-5 scroll-here" id="section">
+        <div className="container d-flex justify-content-around flex-column scroll-here" id="section">
             <div className="row justify-content-center align-items-center ">
                 <div className="col-sm">
                     <ScrollAnimation animateIn="rollIn">
@@ -28,28 +28,30 @@ const About = () => {
             </div>
 
             <ScrollAnimation animateIn="slideInUp" delay={200}>
-                <div className="row d-flex justify-content-center align-items-center mt-5">
+                <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-sm">
                         <h1><a href="/blog-posts/0">Blog</a></h1>
                     </div>
                 </div>
             </ScrollAnimation>
 
-            <div className="row social-icons d-flex justify-content-around mt-5">
+            <div className="row social-icons d-flex justify-content-around">
 
-                <ScrollAnimation animateIn="slideInLeft" delay={400}>
+                <ScrollAnimation animateIn="slideInLeft" delay={400} offset={0}>
                     <a href="https://github.com/Bilalharoon" target="_blank"><i className="fab fa-github"></i></a>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="slideInLeft" delay={400}>
+                <ScrollAnimation animateIn="slideInLeft" delay={400} offset={0}>
                     <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="slideInLeft" delay={400}>
+                <ScrollAnimation animateIn="slideInLeft" delay={400} offset={0}>
                     <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
                 </ScrollAnimation>
 
 
             </div>
+            <footer className="scroll">
 
+            </footer>
         </div>
 
     )

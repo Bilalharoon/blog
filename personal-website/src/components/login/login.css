@@ -1,0 +1,32 @@
+.Login {
+  height: 100vh !important;
+}
+
+.login-box {
+  height: 50%;
+  width: 75%;
+  background-color: #6c7a89;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.login-box h1 {
+  color: white;
+  text-transform: uppercase;
+}
+.input-field {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  color: #fff;
+  text-align: left !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+.input-field::placeholder {
+  color: #f4f4f4;
+}
+.input-field:focus {
+  outline-width: 0px;
+  font-size: 1rem;
+}
