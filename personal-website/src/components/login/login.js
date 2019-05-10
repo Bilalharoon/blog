@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import "./login.css";
+import axios from "axios";
 
 class Login extends Component {
-  state = {};
-
   submitHandler = e => {
     e.preventDefault();
-    console.log("hello world");
   };
 
   render() {
@@ -19,8 +17,8 @@ class Login extends Component {
           <h1>LOGIN</h1>
           <input
             type="email"
-            name="username"
-            placeholder="username"
+            name="Username"
+            placeholder="Username"
             className="input-field mb-5 mt-5"
           />
           <input
@@ -33,7 +31,7 @@ class Login extends Component {
           <input
             type="submit"
             value="SUBMIT"
-            className="mt-5 btn btn-success submit-button"
+            className="mt-5 btn btn-primary submit-button"
           />
         </form>
       </div>
