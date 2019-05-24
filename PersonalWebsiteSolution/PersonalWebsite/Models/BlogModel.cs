@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace PersonalWebsite.Models
 {
+
     public class BlogModel
     {
         public int Id { get; set; }

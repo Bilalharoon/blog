@@ -15,6 +15,7 @@
     width: 50%;
   }
 }
+
 .login-box h1 {
   color: white;
   text-transform: uppercase;
@@ -34,6 +35,8 @@
   color: #f4f4f4;
 }
 .input-field:focus {
+  /* by default when input is focused there is a blue outline
+  so we want to get rid of that */
   outline-width: 0px;
   font-size: 1.5rem;
 }

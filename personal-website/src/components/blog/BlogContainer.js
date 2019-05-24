@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import axios from "axios";
 import Blog from "./Blog";
 import { connect } from "react-redux";
+import * as ActionTypes from "../../store/ActionTypes";
 
 class BlogContainer extends Component {
   state = {
+    // The number of pages
     NumOfPages: 0,
     didLoad: false
   };
@@ -14,8 +16,9 @@ class BlogContainer extends Component {
     this.setState({ didLoad: true });
 
     // grab the posts from the api
-    axios.get("/posts").then(response => {
+    axios.get("/BlogModels").then(response => {
       // get the number of pages in total
+      // divide by 9 to get b/c there are 9 blogposts in one page
       this.setState({ NumOfPages: Math.floor(response.data.length / 9) });
       console.log(this.state.NumOfPages);
 
@@ -31,6 +34,8 @@ class BlogContainer extends Component {
   }
 
   render() {
+    // TODO: change to if statement
+    // TODO: instead of not showing the button, make the button disabled
     // show the back button if we're not on the first page
     const backButton =
       this.props.match.params.id > 0 ? (
@@ -61,9 +66,10 @@ class BlogContainer extends Component {
             <Blog
               key={post.id}
               title={post.title}
-              body={post.body}
+              body={post.description}
               id={post.id}
               didLoad={this.state.didLoad}
+              clickHandler={() => this.props.history.push(`/posts/${post.id}`)}
             />
           ))}
         </div>
@@ -86,7 +92,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    getPosts: posts => dispatch({ type: "GET", payload: posts })
+    getPosts: posts => dispatch({ type: ActionTypes.GET, payload: posts })
   };
 };
 export default connect(

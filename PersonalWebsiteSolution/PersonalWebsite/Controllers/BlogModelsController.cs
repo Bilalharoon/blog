@@ -13,7 +13,6 @@ namespace PersonalWebsite.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class BlogModelsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

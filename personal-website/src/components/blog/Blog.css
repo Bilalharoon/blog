@@ -1,28 +1,26 @@
-.card{
-    transition: 200ms;
-    color: black;
-    background-color: #ffffff;
+.card {
+  transition: 200ms;
+  color: black;
+  background-color: #ffffff;
 }
 
-.card:hover{
-    cursor: pointer;
-    background-color: #ccc;
-    box-shadow: 4px 2px 10px;
+.card:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  box-shadow: 4px 2px 10px;
 }
 
-body{
-    color:#ccc !important;
-}
-
+/* the back and next buttons to change the page */
 button a {
-    color: white;
+  color: white;
 }
 
 button a:hover {
-    color: white;
-    text-decoration: none !important;
+  color: white;
+  text-decoration: none !important;
 }
 
+/* loader for image */
 .loader,
 .loader:after {
   border-radius: 50%;

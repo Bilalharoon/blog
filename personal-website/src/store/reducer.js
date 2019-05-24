@@ -1,21 +1,25 @@
+import * as ActionTypes from "./ActionTypes";
 
 const initialState = {
-    posts: [],
-    NumOfPages: undefined
-}
+  posts: [],
+  NumOfPages: undefined,
+  logedIn: false
+};
 const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ActionTypes.GET:
+      return {
+        ...initialState,
+        posts: action.payload
+      };
+    case ActionTypes.LOGINGIN:
+      return {
+        ...initialState,
+        logedIn: action.payloadx
+      };
+  }
 
-    switch (action.type) {
-        case 'GET':
-            return {
-                ...initialState,
-                posts: action.payload
-            }
+  return state;
+};
 
-
-    }
-
-    return state
-}
-
-export default reducer
+export default reducer;

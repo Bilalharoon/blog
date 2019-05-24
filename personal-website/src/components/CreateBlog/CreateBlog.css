@@ -1,0 +1,14 @@
+.create-blog {
+  height: 100vh;
+}
+
+.create-blog input {
+  margin-top: 3rem;
+}
+.create-blog textarea {
+  margin-top: 3rem;
+  resize: both;
+  text-align: left !important;
+  height: 400px;
+  width: 400px;
+}

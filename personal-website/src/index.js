@@ -10,9 +10,9 @@ import { Provider } from "react-redux";
 import axios from "axios";
 
 const store = createStore(reducer);
-
-axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";
-
+axios.defaults.baseURL = "https://localhost:44393/api";
+axios.defaults.headers.common["Authorization"] =
+  "Bearer " + localStorage.getItem("TOKEN");
 ReactDOM.render(
   <Provider store={store}>
     <Router />
